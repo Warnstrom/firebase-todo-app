@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cloudservice-assignment-4": {
+      "hosting": {
+        "todo-app": [
+          "cloudservice-assignment-4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cloudservice-assignment-4"
+  }
+}

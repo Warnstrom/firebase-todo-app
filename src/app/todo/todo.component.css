@@ -1,0 +1,122 @@
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .add-task {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .task-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .task-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-details {
+    flex: 1;
+  }
+  
+  .task-title {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .task-description {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .task-metadata {
+    display: flex;
+    align-items: center;
+  }
+  
+  .task-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .task-created {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .delete-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Add a scrollbar for the task list if it exceeds a specific height */
+  .task-list {
+    max-height: 300px; /* Set your desired max height here */
+    overflow-y: auto;
+  }

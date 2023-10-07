@@ -1,0 +1,37 @@
+<div class="container">
+    <h1>Modern To-Do List</h1>
+    <form [formGroup]="todoForm" (ngSubmit)="addTask()">
+      <div class="add-task">
+        <input
+          type="text"
+          formControlName="title"
+          placeholder="Title"
+        />
+        <input
+          type="text"
+          formControlName="description"
+          placeholder="Description"
+        />
+        <div class="footer">
+            <button type="submit">            
+              <mat-icon>add</mat-icon>
+            </button>
+        </div>
+      </div>
+    </form><div class="task-container">
+      <h2 class="task-heading">Task List</h2>
+      <ul class="task-list">
+        <li *ngFor="let task of tasks" class="task-item">
+          <div class="task-details">
+            <h4 class="task-title">{{ task.title }}</h4>
+            <p class="task-description">{{ task.description }}</p>
+          </div>
+          <button (click)="deleteTask(task)" class="delete-button">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+  
